@@ -1,4 +1,4 @@
-/// <reference types="cypress" />
+/// <reference types="cypress"/>
 
 context('Exercicio - Testes End-to-end - Fluxo de pedido', () => {
     /*  Como cliente 
