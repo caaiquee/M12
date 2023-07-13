@@ -1,0 +1,13 @@
+{
+    "nome":"Caique",
+    "sobrenome":"Teixeira",
+    "empresa":"EBAC",
+    "pais":"Brasil",
+    "endereco":"av. Paulista",
+    "numero": "1000",
+    "cidade":"São Paulo",
+    "estado":"São Paulo",
+    "cep":"06036048",
+    "telefone":"1199927-5453",
+    "email":"contato@gmail.com"
+}
