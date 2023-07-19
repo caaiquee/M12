@@ -21,12 +21,10 @@ context('Exercicio - Testes End-to-end - Fluxo de pedido', () => {
 
     it('Deve fazer um pedido na loja Ebac Shop de ponta a ponta', () => {
         //TODO 
-        cy.get('#primary-menu > .menu-item-629 > a').click()
-        cy.get('[class="product-block grid"]').eq(0).click()
-        cy.get('.button-variable-item-M').click()
-        cy.get('.button-variable-item-Green').click()
-        cy.get('.input-text').clear().type(4)
-        cy.get('.single_add_to_cart_button').click()
+        cy.addProduto('S', 'Blue')
+        cy.addProduto('M', 'Green')
+        cy.addProduto('L', 'Red')
+        cy.addProduto('XL', 'Green')
         cy.get('.dropdown-toggle > .mini-cart-items').should('contain', 4)
         cy.get('.dropdown-toggle > .mini-cart-items').click()
         cy.get('#cart > .dropdown-menu > .widget_shopping_cart_content > .mini_cart_content > .mini_cart_inner > .mcart-border > .buttons > .checkout').click()
